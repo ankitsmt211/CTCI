@@ -20,6 +20,10 @@ public class HashTable {
   }
 
 
+  public int getSize() {
+    return size;
+  }
+
   public boolean add(String val) {
 
     if (!contains(val)) {
