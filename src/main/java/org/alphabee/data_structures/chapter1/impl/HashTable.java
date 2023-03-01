@@ -8,7 +8,7 @@ import java.util.LinkedList;
 public class HashTable {
   private final LinkedList<String>[] array;
   private int size = 0;
-  private final int DEFAULT_LENGTH = 10;
+  private  final int DEFAULT_LENGTH = 10;
 
   public HashTable() {
     array = new LinkedList[DEFAULT_LENGTH];

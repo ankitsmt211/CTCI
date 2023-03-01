@@ -40,4 +40,18 @@ class HashTableTest {
     hashTable.add("car");
     Assertions.assertEquals(hashTable.getSize(),1);
   }
+
+
+  @Test
+  void containsShouldReturnTrueForAddedValue(){
+    hashTable.add("box");
+    Assertions.assertTrue(hashTable.contains("box"));
+  }
+
+
+  @Test
+  void containsShouldReturnFalseIfValueIsNotAdded(){
+    Assertions.assertFalse(hashTable.contains("box"));
+  }
+
 }
