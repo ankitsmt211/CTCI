@@ -24,7 +24,7 @@ public class HashTable {
 
     if (!contains(val)) {
       int hash = val.hashCode();
-      int index = hash % array.length;
+      int index = Math.abs(hash % array.length);
       array[index].add(val);
       size++;
       return true;
@@ -36,7 +36,7 @@ public class HashTable {
 
   public boolean contains(String val) {
     int hash = val.hashCode();
-    int index = hash % array.length;
+    int index = Math.abs(hash % array.length);
 
     if (!array[index].isEmpty()) {
       return array[index].contains(val);
